@@ -1,0 +1,90 @@
+body {
+  all: unset;
+  background-color: antiquewhite;
+  height: 100vh;
+}
+
+#grid1 {  
+  display: grid;
+  grid-template-rows: 15% 10% 45% 30%;
+  height: 100vh
+}
+
+#grid2 {
+  display: grid;
+  width: 89%;
+  height: 192px;
+  grid-template-columns: 50% 50%;
+  margin: 45px auto;
+  box-shadow: 0.3px 1px 14px black;
+  background-color: black;
+}
+
+h1 {
+  color: indianred;
+  text-align: center;
+  text-shadow: 0.1px 0.3px 1.4px black;
+}
+
+#replay {
+  all: unset;
+  font-size: 1.2rem;
+  background-color: darkturquoise;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 7px;
+  text-align: center;
+  margin: 7px 50px;
+  box-shadow: 0.3px 0.9px 12px turquoise;
+}
+
+#controls {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 20px;
+}
+
+.controls {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  text-align: center;
+}
+
+.control {
+  background-color: darkturquoise;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0.3px 0.9px 12px turquoise;
+  border-radius: 7px;
+  margin: 1px 25px;
+}
+
+.control::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-blend-mode: multiply;
+  background: url(../../assets/fleche.png) no-repeat center center;
+  background-color: darkturquoise;
+  background-size: 50%;
+}
+
+#control1up::before {
+  transform: rotate(270deg);
+}
+
+#control1down::before {
+  transform: rotate(90deg);
+}
+
+#control2up::before {
+  transform: rotate(270deg);
+}
+
+#control2down::before {
+  transform: rotate(90deg);
+}
