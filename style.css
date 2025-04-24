@@ -1,0 +1,38 @@
+body {
+  all: unset;
+  background-color: antiquewhite;
+  height: 100vh;
+}  
+  
+#grid {  
+  display: grid;
+  grid-template-rows: 15% 10% 75%;
+  height: 100vh
+}
+
+h1 {
+  color: indianred;
+  text-align: center;
+  text-shadow: 0.1px 0.3px 1.4px black;
+}
+
+a {
+  all: unset;
+  font-size: 1.2rem;
+  background-color: darkturquoise;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 7px;
+  text-align: center;
+  margin: 7px 50px;
+  box-shadow: 0.3px 0.9px 12px turquoise;
+}
+
+#img {
+  background-image: url("../assets/pong.jpg");
+  background-repeat: no-repeat;
+  margin: 45px 20px;
+  background-size: 100%;
+  box-shadow: 0.3px 1px 14px black;
+  height: 192px;
+}
