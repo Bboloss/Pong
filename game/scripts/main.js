@@ -201,7 +201,7 @@ window.onload = function() {
         ctx.fillText(`à ${score2}`,canvas.width /2 +30, canvas.height /2 + 10);
     }
     
-    let canvas = document.getElementById("grid2");
+    let canvas = document.getElementById("canvas");
     let ctx = canvas.getContext("2d");
     let play = false;
     let score1 = 0;
